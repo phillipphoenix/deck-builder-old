@@ -1,0 +1,24 @@
+$column-gutter: 2%;
+
+.item-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 (-$column-gutter);
+
+  > * {
+    margin-left: $column-gutter;
+    margin-right: $column-gutter;
+  }
+}
+
+// Setup column styles for all column counts.
+
+$columnCounts: 1, 2, 3, 4;
+@each $columnCount in $columnCounts {
+  .item-list__columns-#{$columnCount} {
+    > * {
+      flex-basis: 100% / $columnCount - $column-gutter * 2;
+    }
+  }
+}

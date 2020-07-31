@@ -1,0 +1,12 @@
+.cards-page-content {
+  .title-action-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .actions {
+      margin-left: 0.5rem;
+    }
+  }
+}

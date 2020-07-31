@@ -1,3 +1,11 @@
+# Deck Builder
+
+This PWA allows you to create cards, create decks and play with those decks. It's supposed to be a help, while developing games that involve cards as you can try putting decks together and draw cards from them.
+
+It's made as a PWA so it can run as an app on mobile devices.
+
+# Running the project
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
