@@ -1,6 +1,19 @@
 .page {
+  height: 100%;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
   &__title {
     text-align: center;
+    margin-top: 0;
+    padding-top: 0.83em;
+    flex: 0 0 auto;
+    overflow: hidden;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    overflow: hidden;
   }
 }

@@ -27,6 +27,10 @@ $btn-border-hover-color: darken($btn-hover-color, 5%);
 $background-hover-darken-amount: 5%;
 $text-hover-darken-amount: 20%;
 
+$form-text-color-error: #d84c4c;
+
+$input-text-color-disabled: #b5b8bd;
+
 // --- Color Mixins ---
 
 @mixin bgColorWithHover($color) {

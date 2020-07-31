@@ -1,6 +1,8 @@
 $column-gutter: 2%;
 
 .item-list {
+  max-height: 100%;
+  overflow-y: scroll;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

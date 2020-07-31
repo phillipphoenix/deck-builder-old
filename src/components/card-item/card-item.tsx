@@ -1,14 +1,23 @@
 import React from "react";
 import "./card-item.scss";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faText } from "@fortawesome/pro-solid-svg-icons";
+import { CardData } from "../../types/card";
+
 export interface cardItemProps {
-  name: string;
+  cardData: CardData;
 }
 
-const CardItem: React.SFC<cardItemProps> = ({ name: title }) => {
+const CardItem: React.SFC<cardItemProps> = ({ cardData }) => {
   return (
     <div className="card-item">
-      <span className="card-item__name">{title}</span>
+      <span className="card-item__name">{cardData.name}</span>
+      {cardData.description && (
+        <span className="card-item__description-icon">
+          <FontAwesomeIcon icon={faText} />
+        </span>
+      )}
     </div>
   );
 };
